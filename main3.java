@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class SquareSide {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        double perimeter, side;
+
+        System.out.print("Enter the perimeter of the square: ");
+        perimeter = sc.nextDouble();
+
+        side = perimeter / 4;   // Perimeter = 4 × side
+
+        System.out.println("The length of the side is " + side +
+                           " whose perimeter is " + perimeter);
+
+        sc.close();
+    }
+}
